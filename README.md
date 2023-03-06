@@ -1,4 +1,4 @@
-# MNIST Character Recognition Using CNN
+# MNIST Fashion Recognition Using CNN
 This is a project for Image recognition using the MNIST dataset. The project is developed using tensorflow js using convlolution Neural Networks. 
 
 ## objects Identified
@@ -26,7 +26,7 @@ const INPUTS = TRAINING_DATA.inputs
 const OUTPUTS = TRAINING_DATA.outputs
 ```
 ### shuffle the data
-The input adat is shuffled relative to output data
+The input data is shuffled relative to output data
 ```js
 tf.util.shuffleCombo(INPUTS, OUTPUTS)
 ```
