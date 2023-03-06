@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TensorFlow.js MNIST classifier</h1>
+    <section class="box">
+      <h2>Input Image</h2>
+      <p>Input image is a 28x28 pixel greyscale image from the MNIST dataset - a real hand drawn digit!</p>
+      <canvas id="canvas" width="28" height="28"></canvas>
+    </section>
+    
+    <section class="box">
+      <h2>Prediction</h2>
+      <p>Below you see what number the trained TensorFlow.js model has predicted from the input image.</p>
+      <p>It should get it right most of the time, but of course it's not perfect, so there will be times when it doesn't. Red is a wrong prediction, Green is a correct one.</p>
+      <p id="prediction">Training model. Please wait...</p>
+    </section>
+    
+    <div class="blocky">
+      <p id="domSpeed">Change interval between classifications! Currently 1000ms</p>
+      <input id="ranger" type="range" min="15" max="5000" value="2000" class="slider">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
